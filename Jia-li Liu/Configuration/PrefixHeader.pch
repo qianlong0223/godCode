@@ -1,0 +1,86 @@
+//
+//  PrefixHeader.pch
+//  Jia-li Liu
+//
+//  Created by KLIANS on 2017/4/19.
+//  Copyright © 2017年 KLIANS. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#endif /* PrefixHeader_pch */
+
+#import <UIKit/UIKit.h>
+
+#import "AppConfig.h"                   //常用宏定义文件
+
+#import "JLMovieController.h"           //视频引导页
+
+#import "JLNewFetureController.h"       //静态引导页
+
+#import "JTNavigationController.h"      //自定义Nav
+
+#import "JLTabBarController.h"          //自定义TabBar
+
+#import "JLProtocol.h"                  //协议代理文件
+
+#import <SDAutoLayout/SDAutoLayout.h>   //第三方_代码约束
+
+#import <AFNetworking/AFNetworking.h>   //第三方_网络请求AFN
+
+#import "PPNetworkHelper.h"             //第三方_网络请求—基于AFN
+
+#import "JLProgressHUD.h"               //HUD二次封装
+
+#import <MJExtension/MJExtension.h>     //第三方_数据解析
+
+#import "UIImageView+WebCache.h"        //第三方_图片下载
+#import "UIButton+WebCache.h"
+#import "JLRefreshPch.h"                //MJRefresh封装文件
+
+#import "JLHomeAPI.h"                   //网络请求接口、model基类
+#import "JLLoginAPI.h"
+#import "JLRegistAPI.h"
+#import "JLMidAPI.h"
+#import "JLMidHotProcutAPI.h"
+#import "JLMidActivityAPI.h"
+#import "JLProListAPI.h"
+#import "JLPraiseAPl.h"
+#import "JLExpandAPI.h"
+#import "JLHomeWorkAPI.h"
+#import "JLMineProAPI.h"
+#import "JLMineInfoAPI.h"
+#import "JLUploadHeadAPI.h"
+#import "JLProductUploadAPI.h"
+#import "JLProTypeAPI.h"
+#import "JLActivityAPI.h"
+#import "JLProductDetailAPI.h"
+#import "JLActivityDetailAPI.h"
+#import "JLProductClickMemberAPI.h"
+#import "JLMessageListAPI.h"
+#import "JLUpdatePswAPI.h"
+#import "JLSurpportAPI.h"
+
+#import "JLBaseViewController.h"        //基类控制器
+#import "FXBlurView.h"                  //高斯模糊
+#import "UICollectionView+PlaceHolderView.h"
+#import "UITableView+PlaceHolderView.h"
+#import "StateView.h"
+#import "NSString+Extension.h"
+#import "UIView+UIViewController.h"
+#import "NSString+MD5.h"
+#import "SYButton.h"
+#import "UITextView+Extension.h"
+#import "BoolJudge.h"
+#import "NSString+Base64.h"
+#import "PopupsViewBlock.h"
+#import "ImagePicker.h"
+#import "JHSysAlertUtil.h"
+#import "UITabBar+badge.h"
+#import "UIBarButtonItem+Badge.h"
+#import "SYBigImage.h"
+#import "ZJImageMagnification.h"
+#import "UIImage+Image.h"

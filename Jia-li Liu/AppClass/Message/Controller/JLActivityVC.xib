@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JLActivityVC">
+            <connections>
+                <outlet property="oneBtn" destination="Yv2-vO-4Wm" id="ycW-65-D0E"/>
+                <outlet property="twoBtn" destination="feQ-yr-rWV" id="ncP-4S-X0g"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yv2-vO-4Wm">
+                    <rect key="frame" x="51" y="23" width="116" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="116" id="oin-IY-thb"/>
+                    </constraints>
+                    <state key="normal" image="校内活动"/>
+                    <connections>
+                        <action selector="oneBtnClicked:" destination="-1" eventType="touchUpInside" id="0BY-kB-vy4"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zma-aJ-Ayl">
+                    <rect key="frame" x="167.5" y="23" width="40" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="fah-94-ZOI"/>
+                        <constraint firstAttribute="height" constant="44" id="uK9-nO-XLR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feQ-yr-rWV">
+                    <rect key="frame" x="207" y="23" width="116" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="校外活动"/>
+                    <connections>
+                        <action selector="twoBtnClicked:" destination="-1" eventType="touchUpInside" id="wCa-dl-aAA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="feQ-yr-rWV" firstAttribute="width" secondItem="Yv2-vO-4Wm" secondAttribute="width" id="9Rn-eK-Cw8"/>
+                <constraint firstItem="feQ-yr-rWV" firstAttribute="leading" secondItem="Yv2-vO-4Wm" secondAttribute="trailing" constant="40" id="Asc-HI-gpL"/>
+                <constraint firstItem="feQ-yr-rWV" firstAttribute="centerY" secondItem="zma-aJ-Ayl" secondAttribute="centerY" constant="3" id="Hzj-Vq-1KF"/>
+                <constraint firstItem="zma-aJ-Ayl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ohg-h3-qrm"/>
+                <constraint firstItem="zma-aJ-Ayl" firstAttribute="leading" secondItem="Yv2-vO-4Wm" secondAttribute="trailing" constant="0.5" id="X4B-kR-S6l"/>
+                <constraint firstItem="Yv2-vO-4Wm" firstAttribute="height" secondItem="zma-aJ-Ayl" secondAttribute="height" constant="6" id="fed-jj-I1B"/>
+                <constraint firstItem="zma-aJ-Ayl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="23" id="gnd-06-03S"/>
+                <constraint firstItem="feQ-yr-rWV" firstAttribute="height" secondItem="Yv2-vO-4Wm" secondAttribute="height" id="qmp-oB-TJs"/>
+                <constraint firstItem="Yv2-vO-4Wm" firstAttribute="centerY" secondItem="zma-aJ-Ayl" secondAttribute="centerY" constant="3" id="uKC-Ws-F4j"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="校内活动" width="249" height="101"/>
+        <image name="校外活动" width="249" height="101"/>
+    </resources>
+</document>
