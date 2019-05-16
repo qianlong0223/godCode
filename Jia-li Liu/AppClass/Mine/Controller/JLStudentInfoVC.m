@@ -96,8 +96,7 @@
 }
 
 -(BOOL)imageHasAlpha:(UIImage *)image{
-    
-    
+    NSLog(@"test");
     CGImageAlphaInfo alpha = CGImageGetAlphaInfo(image.CGImage);
     return (alpha == kCGImageAlphaFirst ||
             alpha == kCGImageAlphaLast ||
